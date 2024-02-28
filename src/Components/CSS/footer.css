@@ -1,0 +1,27 @@
+.all{
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+}
+.first,.second{
+    width: 50%;
+    display: flex;  
+    justify-content: space-around;
+}
+
+@media (max-width:640px) {
+    .all{
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+    .first,.second{
+        display: flex;  
+        width: 100%;
+        justify-content: space-between;
+    }
+    .first{
+        padding-right: 18px;
+    }
+}
+
